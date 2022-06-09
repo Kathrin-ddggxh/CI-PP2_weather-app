@@ -12,7 +12,7 @@
 <body>
     <!-- Header element with search bar -->
     <header>
-        <form id="search-form">
+        <form id="search-form" class="search-form flex">
             <input type="text" name="search" id="search" aria-label="search location input"
                 placeholder="🔍 Find location">
             <div class="input-btns">
@@ -23,7 +23,19 @@
         </form>
     </header>
     <main>
-        <div class="current"></div>
+        <div class="current flex" aria-label="current forecast">
+            <div class="col">
+                <p id="current-temp" class="current-temp">21 ° C</p>
+                <p id="location" class="location">Dublin</p>
+                <p class="date-time"><span>Wednesday </span><span>09:43</span></p>
+            </div>
+            <div class="col right">
+                <div id="current-icon" class="current-icon">☀</div>
+                <p id="condition" class="condition">Sunny</p>
+                <p class="wind-humid">Humidity: <span id="humidity">60</span>%<br>Wind: <span id="wind">12</span>km/h
+                </p>
+            </div>
+        </div>
         <h2>3 Hour Forecast</h2>
         <div class="3-hour"></div>
         <h2>5 Day Forecast</h2>

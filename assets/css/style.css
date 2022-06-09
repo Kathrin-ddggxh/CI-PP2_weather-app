@@ -4,9 +4,28 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
     font-weight: 300;
+    padding: 1em;
+}
+
+/* utility classes */
+
+.flex {
+    display: flex;
+}
+
+.right {
+    text-align: right;
+}
+
+/* search form style */
+
+.search-form {
+    flex-direction: column;
 }
