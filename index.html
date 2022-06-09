@@ -10,8 +10,17 @@
 </head>
 
 <body>
+    <!-- Header element with search bar -->
     <header>
-
+        <form id="search-form">
+            <input type="text" name="search" id="search" aria-label="search location input"
+                placeholder="🔍 Find location">
+            <div class="input-btns">
+                <input type="submit" aria-label="search button" value="Search" id="search-btn" class="search-btn">
+                <input type="submit" aria-label="own location button" value="My Location" id="location-btn"
+                    class="location-btn">
+            </div>
+        </form>
     </header>
     <main>
         <div class="current"></div>
