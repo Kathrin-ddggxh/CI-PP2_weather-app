@@ -38,7 +38,9 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 0.5em;
+    column-count: auto;
 }
 
 .search-form,
@@ -89,11 +91,16 @@ h2 {
 .hourly {
     border-radius: 5px;
     background-color: rgb(221, 238, 253);
+    overflow: scroll;
 }
 
 .hourly-forecast {
     text-align: center;
     padding: .3em 0;
+}
+
+.hourly-forecast+.hourly-forecast {
+    border-left: 1px solid rgb(146, 146, 146);
 }
 
 .hourly-forecast>* {
