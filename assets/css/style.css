@@ -18,14 +18,58 @@ body {
 
 .flex {
     display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .right {
     text-align: right;
 }
 
+.search-form,
+.current,
+.daily {
+    max-width: 470px;
+}
+
 /* search form style */
 
 .search-form {
     flex-direction: column;
+}
+
+/* current weather panel style */
+
+.current {
+    background-color: rgb(210, 234, 255);
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.current-temp,
+.current-icon {
+    font-size: 2.7rem;
+    font-weight: 500;
+    padding-bottom: .2em;
+
+}
+
+.location {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.condition {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.date-time,
+.wind-humid {
+    padding-top: 1.2em;
 }
