@@ -11,7 +11,7 @@
 
 body {
     font-weight: 300;
-    padding: 1em;
+    padding: 2em 1em 5em 1em;
 }
 
 h2 {
@@ -52,7 +52,35 @@ h2 {
 
 .search-form {
     flex-direction: column;
+    margin-bottom: 2em;
 }
+
+.search-bar {
+    font-size: 1.5rem;
+    padding: .2em;
+    border-radius: 5px;
+    border: solid 1px rgb(204, 204, 204);
+}
+
+.search-btn,
+.location-btn {
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: .3em .6em;
+    margin: .8em 1em .5em 0;
+    color: #fff;
+}
+
+.search-btn {
+    background: linear-gradient(45deg, rgba(2, 0, 36, 1) 28%, rgba(9, 9, 121, 1) 57%, rgba(0, 212, 255, 1) 100%);
+}
+
+.location-btn {
+    background: linear-gradient(315deg, rgba(64, 0, 0, 1) 36%, rgba(121, 9, 9, 1) 65%, rgba(217, 0, 0, 1) 100%);
+}
+
 
 /* current weather panel style */
 
