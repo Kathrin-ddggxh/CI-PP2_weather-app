@@ -38,9 +38,8 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+
     column-gap: 0.5em;
-    column-count: auto;
 }
 
 .search-form,
@@ -92,25 +91,39 @@ h2 {
     border-radius: 5px;
     background-color: rgb(221, 238, 253);
     overflow: scroll;
+    grid-template-columns: repeat(7, 1fr);
 }
 
-.hourly-forecast {
+.hourly-forecast,
+.daily-forecast {
     text-align: center;
     padding: .3em 0;
 }
 
-.hourly-forecast+.hourly-forecast {
+.hourly-forecast+.hourly-forecast,
+.daily-forecast+.daily-forecast {
     border-left: 1px solid rgb(146, 146, 146);
 }
 
-.hourly-forecast>* {
+.hourly-forecast>*,
+.daily-forecast>* {
     padding: .6em .4em;
 }
 
-.hourly-temp-high {
+.hourly-temp-high,
+.daily-temp-high {
     font-weight: 600;
 }
 
-.hourly-temp-low {
+.hourly-temp-low,
+.daily-temp-low {
     font-weight: 400;
+}
+
+/* 5 day forecast style */
+
+.daily {
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(218, 238, 255);
+    border-radius: 5px;
 }
