@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
 *,
 *::before,
@@ -12,6 +12,11 @@
 body {
     font-weight: 300;
     padding: 1em;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 1em 0 .5em 0;
 }
 
 /* utility classes */
@@ -29,6 +34,11 @@ body {
 
 .right {
     text-align: right;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .search-form,
@@ -72,4 +82,28 @@ body {
 .date-time,
 .wind-humid {
     padding-top: 1.2em;
+}
+
+/* 3 hour forecast style */
+
+.hourly {
+    border-radius: 5px;
+    background-color: rgb(221, 238, 253);
+}
+
+.hourly-forecast {
+    text-align: center;
+    padding: .3em 0;
+}
+
+.hourly-forecast>* {
+    padding: .6em .4em;
+}
+
+.hourly-temp-high {
+    font-weight: 600;
+}
+
+.hourly-temp-low {
+    font-weight: 400;
 }
